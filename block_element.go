@@ -171,6 +171,12 @@ func (s *ButtonBlockElement) WithStyle(style Style) *ButtonBlockElement {
 	return s
 }
 
+// WithURL adds a URL to the button object and returns the modified ButtonBlockElement
+func (s *ButtonBlockElement) WithURL(url string) *ButtonBlockElement {
+	s.URL = url
+	return s
+}
+
 // WithConfirm adds a confirmation dialogue to the button object and returns the modified ButtonBlockElement
 func (s *ButtonBlockElement) WithConfirm(confirm *ConfirmationBlockObject) *ButtonBlockElement {
 	s.Confirm = confirm
